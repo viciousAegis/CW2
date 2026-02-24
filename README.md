@@ -49,6 +49,8 @@ You may see a few warnings about `ERROR: pip's dependency resolver` throughout t
 ### 1.2 Tips on Interactive GPU Sessions
 You're highly recommended to use [tmux](https://tmuxcheatsheet.com/), which is a terminal multiplexer and is already pre-installed on the HPC. Once you've successfully been allocated an interactive session on a particular GPU node (eg, `gpu-q-1`), you may create a new `tmux` pane and directly access that GPU node by running, for instance, `ssh gpu-q-1` on the login node. This will be very useful for running the visualisation tools alongside model training.
 
+Note that these tmux sessions will remain active even if you disconnect from the server. But you will notice that there are several [different login nodes](https://docs.hpc.cam.ac.uk/hpc/user-guide/connecting.html) `login-q-[1,2,3,4]` and you may be taken to a different node each time you run `ssh login-icelake.hpc.cam.ac.uk`. Another useful tip is that after you land in a login node, you can connect to a _different_ login node direclty by running eg `ssh login-q-1` again from the first login node. This is useful, for example, if you have your tmux sessions on a specific login node.
+
 
 ## Task 1 – Camera Pose Estimation and Sparse Reconstruction
 Task 1 involves running COLMAP and Pi3 to estimate camera poses and reconstruct sparse 3D point clouds from a video, and compare their results. See the Coursework PDF for the exact tasks. Instructions on how to run COLMAP and Pi3 are provided here.
