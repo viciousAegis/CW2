@@ -29,7 +29,7 @@ This codebase depends on a number of Python packages, including [PyTorch](https:
 git clone https://github.com/CambridgeCVCourses/CW2.git
 ```
 
-You need a GPU session to set up the environment. It may be easier to do so using an interactive session. Once you have logged into the HPC, to request an interactive session, use this command with your assigned project code (is it `MLMI-SL2-GPU`?):
+You need a GPU session to set up the environment. It may be easier to do so using an interactive session. Once you have logged into the HPC, to request an interactive session, use this command with your assigned project code (which might be `MLMI-[CRSID]-SL2-GPU ` as one of the students suggested):
 ```
 sintr -t 2:0:0 -A [YOUR_ASSIGNED_PROJECT] --nodes=1 --gres=gpu:1 -p ampere
 ```
