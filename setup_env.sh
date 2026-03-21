@@ -1,5 +1,6 @@
 ## create environtment
 source ~/.bashrc
+CONDA_PREFIX="/home/$USER/rds/miniforge3"
 ENV_NAME=ns
 mamba create -n $ENV_NAME python=3.10 -y
 
